@@ -69,3 +69,15 @@ button {
     width:768px;
   }
 }
+
+@media (max-width:768px) {
+  .container {
+    width:640px;
+  }
+}
+
+@media (max-width:640px) {
+  .container {
+    width:475px;
+  }
+}
