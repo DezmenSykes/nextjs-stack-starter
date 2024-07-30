@@ -5,7 +5,7 @@
 .active {
     background:var(--bittersweet);
     color:var(--ivory);
-    border-radius:5px;
-    padding:7px 10px;
+    border-radius:20px;
+    padding:4px 17px;
     font-weight: bold;
 }
