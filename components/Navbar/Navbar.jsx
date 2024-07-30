@@ -4,10 +4,10 @@ import styles from './Navbar.module.css'
 const Navbar = () => {
     return (
         <div className={styles.container}>
-            <div>
+            <div className={styles.logo}>
                 <h1>Logo</h1>
             </div>
-            <div>
+            <div className={styles.nav_links}>
                 <Links />
             </div>
         </div>
