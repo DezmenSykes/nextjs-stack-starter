@@ -11,9 +11,26 @@
   --maize: #ffed66ff;
 }
 
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
 body{
-  background: var(--ivory);
+  background: var(--timberwolf);
   color: #333;
+}
+
+.container{
+  background:#fff;
+  margin:auto;
+  width:1536px;
+  padding:0 3rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 a{
