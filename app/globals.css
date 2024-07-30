@@ -1,9 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
-*{
-  margin:0;
-  padding:0;
-  
- }
+
+:root {
+  /* CSS HEX */
+  --bittersweet: #ff5e5bff;
+  --timberwolf: #d8d8d8ff;
+  --ivory: #ffffeaff;
+  --robin-egg-blue: #00cecbff;
+  --maize: #ffed66ff;
+}
+
+body{
+  background: var(--ivory);
+  color: #333;
+}
+
+a{
+  text-decoration: none;
+  color: var(--bittersweet);
+}
