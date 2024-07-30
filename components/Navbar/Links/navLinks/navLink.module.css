@@ -1,0 +1,10 @@
+.link {
+    color: var(--bittersweet);
+}
+
+.active {
+    background:var(--bittersweet);
+    color:var(--ivory);
+    border-radius:5px;
+    padding:7px 10px;
+}

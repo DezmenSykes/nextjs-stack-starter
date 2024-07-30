@@ -1,4 +1,4 @@
-const { default: Link } = require("next/link")
+import NavLink from '@/components/Navbar/Links/navLinks/NavLinks'
 import styles from './links.module.css'
 
 const Links = () => {
@@ -28,7 +28,7 @@ const Links = () => {
     return ( 
         <div className={styles.links}>
             {links.map((link => (
-                <Link href={link.path} key={link.title}>{link.title}</Link>
+                <NavLink item={link} key={link.title} />
             )))}
         </div>
     )
