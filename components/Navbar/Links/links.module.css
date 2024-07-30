@@ -3,3 +3,10 @@
     align-items:center;
     gap:1rem;
 }
+
+
+.logout {
+    background:var(--text);
+    font-size:0.7em;
+    font-weight: bold;
+}

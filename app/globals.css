@@ -9,6 +9,7 @@
   --ivory: #ffffeaff;
   --robin-egg-blue: #00cecbff;
   --maize: #ffed66ff;
+  --text: #222;
 }
 
 *{
@@ -19,7 +20,7 @@
 
 body{
   background: var(--timberwolf);
-  color: #333;
+  color: var(--text);
 }
 
 .container{
@@ -35,4 +36,12 @@ body{
 a{
   text-decoration: none;
   color: var(--bittersweet);
+}
+
+button {
+  background:var(--robin-egg-blue);
+  color:var(--ivory);
+  border-radius:5px;
+  padding:7px 10px;
+  
 }
