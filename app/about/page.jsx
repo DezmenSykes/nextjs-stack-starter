@@ -1,6 +1,10 @@
+import Image from "next/image"
+
 const AboutPage = () => {
     return (
-      <h1>AboutPage!</h1>
+      <div> 
+        <Image src="/about.png" alt="" width={500} height={500} />
+      </div>
     )
   }
   
