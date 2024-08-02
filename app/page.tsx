@@ -8,8 +8,8 @@ const HomePage = () => {
         <h1>Digital Creative Agency</h1>
         <p>This is a dumy creative agency meant to provide the best digital services in web development and creative marketing and branding.</p>
         <div className={styles.buttons}>
-          <button>Learn More</button>
-          <button>Contact</button>
+          <button className={styles.button}>Learn More</button>
+          <button className={styles.button}>Contact</button>
         </div>
         <div className={styles.brands}>
           <Image src="/brands.png" alt="" fill className={styles.brands}/>
