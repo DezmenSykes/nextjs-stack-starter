@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styles from './home.module.css'
 
 const HomePage = () => {
@@ -10,10 +11,12 @@ const HomePage = () => {
           <button>Learn More</button>
           <button>Contact</button>
         </div>
-        <div className={styles.brands}></div>
+        <div className={styles.brands}>
+          <Image src="/brands.png" alt="" fill className={styles.brands}/>
+        </div>
       </div>
       <div className={styles.imgContainer}>
-
+        <Image src="/hero.gif" alt="" fill className={styles.heroImg}/>
       </div>
     </div>
   )
