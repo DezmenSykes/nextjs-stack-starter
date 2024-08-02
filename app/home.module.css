@@ -27,7 +27,9 @@
     margin-top:5rem;
 }
 
-  
+.heroImg {
+    border-radius: 7rem;
+} 
 
 .buttons button{
     background:var(--robin-egg-blue);
