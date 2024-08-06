@@ -15,3 +15,8 @@
 .imgContainer {
     flex: 1;
 }
+
+.boxes {
+    display: flex;
+    gap:2rem;
+}
