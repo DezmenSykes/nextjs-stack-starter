@@ -1,4 +1,6 @@
 .container {
     display: flex;
-    gap:3rem;
+    flex-wrap: wrap;
+    gap:20px;
+    border:1px solid rgba(0,0,0,0.7);
 }
