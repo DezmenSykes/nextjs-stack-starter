@@ -18,15 +18,16 @@
 }
 
 .title {
-    
+    font-size: 4rem;
+    line-height:4rem;
 }
 
 .subtitle{
-
+    color:var(--bittersweet);
 }
 
 .desc {
-    
+
 }
 
 .boxes {

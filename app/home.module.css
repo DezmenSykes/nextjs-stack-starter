@@ -28,18 +28,20 @@
 }
 
 .heroImg {
-    border-radius: 7rem;
-} 
+    border-radius: 10% 25%;
+}
 
 .buttons button{
     background:var(--robin-egg-blue);
     padding:20px;
     border:none;
+    color: var(--timberwolf);
+    font-weight: 600;
 }
 
 .button:last-child {
-    background:var(--ivory);
-    color:var(--text);
+    background:var(--text);
+    color:var(--timberwolf);
 }
 
 .brands {

@@ -4,12 +4,12 @@
 
 :root {
   /* CSS HEX */
-  --bittersweet: #ff5e5bff;
-  --timberwolf: #d8d8d8ff;
+  --bittersweet: #C1292E;
+  --timberwolf: #FDFFFC;
   --ivory: #ffffeaff;
-  --robin-egg-blue: #00cecbff;
-  --maize: #ffed66ff;
-  --text: #222;
+  --robin-egg-blue: #235789;
+  --maize: #F1D302;
+  --text: #161925;
 }
 
 *{
