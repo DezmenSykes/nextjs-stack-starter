@@ -1,6 +1,10 @@
+import styles from './contact.module.css'
+
 const ContactPage = () => {
     return (
-      <h1>ContactPage!</h1>
+      <div className={styles.container}>
+
+      </div>
     )
   }
   

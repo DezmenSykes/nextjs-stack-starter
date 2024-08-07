@@ -17,6 +17,10 @@
     position:relative;
 }
 
+.aboutImg {
+    object-fit: contain;
+}
+
 .title {
     font-size: 4rem;
     line-height:4rem;
@@ -34,6 +38,14 @@
 
 .boxes {
     display: flex;
+    align-items: center;
     gap:2rem;
     margin-top:2rem;
+    justify-content: space-between;
+}
+
+.box h1{
+    color: var(--robin-egg-blue);
+    font-weight:600;
+    font-size: 3rem;
 }
