@@ -1,6 +1,9 @@
+import styles from './blog.module.css'
 const BlogPage = () => {
     return (
-      <h1>BlogPage!</h1>
+      <div className={styles.container}>
+        
+      </div>
     )
   }
   
