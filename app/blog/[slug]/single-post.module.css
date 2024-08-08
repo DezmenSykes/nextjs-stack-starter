@@ -1,0 +1,21 @@
+.container {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.imgContainer {
+    flex: 1;
+    height: 500px;
+    width: 500px;
+    position: relative;
+}
+
+.img {
+    object-fit: contain;
+}
+
+.postContainer {
+    flex: 1;
+}
