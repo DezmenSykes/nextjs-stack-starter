@@ -3,11 +3,11 @@
     flex-direction: column;
     gap:1.1em;
     margin-bottom: 1.1em;
-    border:1px solid #000;
 }
 
 .top {
     display: flex;
+    justify-content: space-between;
 }
 
 .imgContainer{
@@ -18,10 +18,30 @@
 
 .thumbnail {
     object-fit: cover;
-    border:1px solid #000;
+}
+
+.title{
+    width: 90%;
+    font-size: 2rem;
+    margin-bottom:1rem;
+    font-weight: 600;
+    color:var(--robin-egg-blue);
+}
+
+.desc{
+    margin-bottom: 1rem;
+    font-weight: 300;
+    color:gray;
+    width: 90%;
+}
+
+.readMoreBtn {
+    text-transform: uppercase;
+    font-size: 0.9em;
 }
 
 .date {
     font-size: 1rem;
     transform: rotate(270deg);
+    margin: auto;
 }
