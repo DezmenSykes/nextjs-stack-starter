@@ -1,21 +1,37 @@
 .container {
     display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 5rem;
+    gap: 6.25em;
 }
 
 .imgContainer {
     flex: 1;
-    height: 500px;
-    width: 500px;
     position: relative;
+    height: calc(100vh - 200px);
 }
 
 .img {
-    object-fit: contain;
+    object-fit: cover;
+}
+
+.avatar{
+    object-fit: cover;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 
 .postContainer {
-    flex: 1;
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.title{
+    font-size: 64px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
 }
