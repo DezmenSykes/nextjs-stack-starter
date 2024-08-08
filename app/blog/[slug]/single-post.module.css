@@ -11,6 +11,7 @@
 
 .img {
     object-fit: cover;
+    border-radius: 7% 24%;
 }
 
 .avatar{
@@ -29,6 +30,7 @@
 
 .title{
     font-size: 64px;
+    color: var(--robin-egg-blue);
 }
 
 .details {
@@ -40,4 +42,20 @@
 .detailText {
     display: flex;
     flex-direction: column;
+    gap:0.4em;
+}
+
+.detailTitle {
+    font-weight: 600;
+    color:var(--robin-egg-blue);
+    font-size:1.1em;
+}
+
+.detailValue{
+    font-weight: 300;
+    font-size:1rem;
+}
+
+.content {
+    font-size:1.1em;
 }
