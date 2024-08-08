@@ -24,7 +24,7 @@
     display: flex;
     flex: 2;
     flex-direction: column;
-    gap:2rem;
+    gap:3rem;
 }
 
 .title{
@@ -32,6 +32,12 @@
 }
 
 .details {
+    display: flex;
+    flex-direction: row;
+    gap: 1.3rem;
+}
+
+.detailText {
     display: flex;
     flex-direction: column;
 }
