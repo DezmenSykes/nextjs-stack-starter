@@ -6,10 +6,10 @@ const getData = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts", {cache: 'no-store'});
 
   if(!res.ok) {
-    throw error("Something went wrong..")
+    throw error("Something went wrong..");
   }
 
-  return res.json()
+  return res.json();
 }
 
 const BlogPage = async () => {
@@ -17,11 +17,11 @@ const BlogPage = async () => {
     //console.log(posts);
     return (
       <div className={styles.container}>
-        {posts.map((p) => {
-          <div className={styles.post} key={p.id}> 
+        {posts.map((p) => (
+          <div className={styles.post}> 
             <PostCard post={p} />
           </div>
-        })}
+        ))}
       </div>
     )
   }
