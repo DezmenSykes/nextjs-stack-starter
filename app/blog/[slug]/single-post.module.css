@@ -30,6 +30,7 @@
 
 .title{
     font-size: 64px;
+    line-height: 4rem;
     color: var(--robin-egg-blue);
 }
 
