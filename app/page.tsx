@@ -5,8 +5,8 @@ const HomePage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
-        <h1>Digital Creative Agency</h1>
-        <p>This is a dumy creative agency meant to provide the best digital services in web development and creative marketing and branding.</p>
+        <h1 className={styles.title}>Digital Creative Agency</h1>
+        <p className={styles.desc}>This is a dumy creative agency meant to provide the best digital services in web development and creative marketing and branding.</p>
         <div className={styles.buttons}>
           <button className={styles.button}>Learn More</button>
           <button className={styles.button}>Contact</button>
