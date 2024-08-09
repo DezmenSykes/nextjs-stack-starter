@@ -24,7 +24,7 @@ const AboutPage = () => {
           </div>
         </div>
         <div className={styles.imgContainer}>
-          <Image src="/about.png" width={500} height={500} alt="" /> 
+          <Image src="/about.png" alt="" width={500} height={500}/> 
         </div>
       </div>
     )
