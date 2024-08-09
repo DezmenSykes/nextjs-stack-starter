@@ -1,11 +1,25 @@
-import Link from "next/link"
+import styles from './post-user.module.css'
 
-const PostUser = () => {
+const getData = async (userId) => {
+    console.log(userId)
+    const res = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`);
+  
+    if(!res.ok) {
+      throw error("Something went wrong..");
+    }
+  
+    return res.json();
+  }
+
+const PostUser = async ({userId}) => {
+    const user = await getData(userId);
+    //console.log(user);
     return (
-        <div>
-            
+        <div className={styles.container}>
+            <span className={styles.title}>Author</span>
+            <span className={styles.username}>{user.name}</span>
         </div>
     )
-  }
+}
   
-  export default PostUser
+export default PostUser
