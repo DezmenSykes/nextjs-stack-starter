@@ -3,7 +3,7 @@ import styles from './single-post.module.css'
 import PostUser from '@/components/PostUser/PostUser'
 
 const getData = async (slug) => {
-  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${slug}`);
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${slug}`, {cache: 'no-cache'});
 
   if(!res.ok) {
     throw error("Something went wrong..");
