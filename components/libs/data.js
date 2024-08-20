@@ -6,5 +6,9 @@ const posts = [
 ]
 
 export const getPosts = () => {
-    
+    return posts
+}
+
+export const getPost = (id) => {
+    return posts.find((post) => {post.id == id})
 }
