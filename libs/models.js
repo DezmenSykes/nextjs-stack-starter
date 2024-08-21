@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const userSchema = mongoose.Schema({
+const userSchema = new mongoose.Schema({
     username: {
         type: String,
         required: true,
@@ -27,7 +27,7 @@ const userSchema = mongoose.Schema({
     }
 }, {timestamps: true})
 
-const postSchema = mongoose.Schema({
+const postSchema = new mongoose.Schema({
     title: {
         type: String,
         required: true,
@@ -51,4 +51,4 @@ const postSchema = mongoose.Schema({
 }, {timestamps: true})
 
 export const User = mongoose.models.User || mongoose.model("User", userSchema)
-export const Post = mongoose.models.Post || mongoose.model("Post", userSchema)
+export const Post = mongoose.models.Post || mongoose.model("Post", postSchema)

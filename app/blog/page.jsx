@@ -14,7 +14,7 @@ import { getPosts } from '@/libs/data'
 } */
 
 const BlogPage = async () => {
-    const posts = await getPosts()
+    const posts = await getPosts();
     console.log(posts);
     return (
       <div className={styles.container}>
