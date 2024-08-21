@@ -1,6 +1,8 @@
 import { Post, User } from "./models"
 import { connectToDB } from "./utils";
 
+// ? - 5PHDxB7zOGEFgGrU
+
 export const getPosts = async () => {
     try {
         connectToDB()
