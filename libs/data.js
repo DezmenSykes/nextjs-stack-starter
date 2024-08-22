@@ -7,8 +7,9 @@ import { connectToDB } from "./utils";
 export const getPosts = async () => {
     try {
         connectToDB()
-        const posts = await Post.find();
-        console.log(posts);
+
+        const posts = Post.find();
+        console.log('deeeze');
 
         return posts;
     } catch (error) {
@@ -21,7 +22,7 @@ export const getPost = async (slug) => {
     try {
         connectToDB()
 
-        const post = await Post.findOne({slug})
+        const post = await Post.find({slug})
         return post;
     } catch (error) {
         console.log(error)
