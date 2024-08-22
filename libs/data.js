@@ -7,8 +7,7 @@ import { connectToDB } from "./utils";
 export const getPosts = async () => {
     try {
         connectToDB()
-
-        const posts = Post.find();
+        const posts = await Post.find();
         console.log('deeeze');
 
         return posts;
