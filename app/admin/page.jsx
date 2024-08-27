@@ -1,6 +1,16 @@
 const AdminPage = () => {
     return (
-      <h1>AdminPage!</h1>
+      <>
+        <section>
+
+        </section>
+        <section>
+          
+        </section>
+        <section>
+          
+        </section>
+      </>
     )
   }
   
