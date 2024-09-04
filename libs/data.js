@@ -1,6 +1,6 @@
 'use server'
 import mongoose from "mongoose";
-import { Post, User } from "./models"
+import { Post, User, postSchema } from "./models"
 import { connectToDB } from "./utils";
 
 // ? - 5PHDxB7zOGEFgGrU
