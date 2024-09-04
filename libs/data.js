@@ -1,14 +1,15 @@
+'use server'
 import mongoose from "mongoose";
 import { Post, User } from "./models"
 import { connectToDB } from "./utils";
 
 // ? - 5PHDxB7zOGEFgGrU
 
-export const getPosts = async () => {
+export async function getPosts() {
     try {
-        connectToDB()
+        await connectToDB();
         const posts = await Post.find();
-        console.log('deeeze');
+        console.log(posts);
 
         return posts;
     } catch (error) {
@@ -17,9 +18,9 @@ export const getPosts = async () => {
     }
 }
 
-export const getPost = async (slug) => {
+/*export const getPost = async (slug) => {
     try {
-        connectToDB()
+        await connectToDB()
 
         const post = await Post.find({slug})
         return post;
@@ -31,7 +32,7 @@ export const getPost = async (slug) => {
 
 export const getUser = async (id) => {
     try {
-        connectToDB()
+        await connectToDB()
 
         const user = await User.findOne(id)
         return user;
@@ -44,7 +45,7 @@ export const getUser = async (id) => {
 
 export const getUsers = async () => {
     try {
-        connectToDB()
+        await connectToDB()
 
         const users = await User.find()
         return users;
@@ -52,4 +53,4 @@ export const getUsers = async () => {
         console.log(error)
         throw new Error("Failed to fetch users")
     }
-}
+}*/
