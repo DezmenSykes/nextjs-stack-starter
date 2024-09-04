@@ -8,10 +8,11 @@ import { connectToDB } from "./utils";
 export async function getPosts() {
     try {
         await connectToDB();
+
         const testData = await Testing.findOne();
         console.log(testData);
 
-        return posts;
+        return testData;
     } catch (error) {
         console.log(error)
         throw new Error(error)
