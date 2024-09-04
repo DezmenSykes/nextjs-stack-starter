@@ -9,7 +9,7 @@ export const connectToDB = async () => {
             return;
         }
 
-        const db = await (await mongoose.connect(process.env.MONGO))
+        const db = await mongoose.connect("mongodb+srv://dsykes:5PHDxB7zOGEFgGrU@cluster0.os9sv.mongodb.net/nextBlog?retryWrites=true&w=majority&appName=Cluster0")
         connection.isConnected = db.connections[0].readyState;
         console.log(connection)
     } catch (error) {
