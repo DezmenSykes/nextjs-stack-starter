@@ -1,15 +1,15 @@
 'use server'
 import mongoose from "mongoose";
-import { Post, User, postSchema } from "./models"
+import { Post, Testing, User, postSchema } from "./models"
 import { connectToDB } from "./utils";
 
-// ? - 5PHDxB7zOGEFgGrU
+// ?? - 7C8OfqD5JAupgOZm
 
 export async function getPosts() {
     try {
         await connectToDB();
-        const posts = await Post.find();
-        console.log(posts);
+        const testData = await Testing.findOne();
+        console.log(testData);
 
         return posts;
     } catch (error) {

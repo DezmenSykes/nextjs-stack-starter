@@ -50,5 +50,13 @@ export const postSchema = new mongoose.Schema({
     }
 }, {timestamps: true})
 
+const testingSchema = new mongoose.Schema({
+    msg: {
+        type: String,
+        required: false
+    }
+})
+
 export const User = mongoose.models.user || mongoose.model("user", userSchema)
 export const Post = mongoose.models.post || mongoose.model("post", postSchema)
+export const Testing = mongoose.models.testing || mongoose.model("testing", testingSchema)
