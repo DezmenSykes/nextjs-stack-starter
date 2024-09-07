@@ -1,4 +1,4 @@
-'use server'
+
 import mongoose from "mongoose";
 import { Post, Testing, User, postSchema } from "./models"
 import { connectToDB } from "./utils";
@@ -9,7 +9,7 @@ export async function getPosts() {
     try {
         await connectToDB();
 
-        const testData = await Testing.findOne();
+        const testData = await Post.find();
         console.log(testData);
 
         return testData;
@@ -19,7 +19,7 @@ export async function getPosts() {
     }
 }
 
-/*export const getPost = async (slug) => {
+export const getPost = async (slug) => {
     try {
         await connectToDB()
 
@@ -54,4 +54,4 @@ export const getUsers = async () => {
         console.log(error)
         throw new Error("Failed to fetch users")
     }
-}*/
+}
