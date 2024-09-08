@@ -23,7 +23,7 @@ export const getPost = async (slug) => {
     try {
         await connectToDB()
 
-        const post = await Post.find({slug})
+        const post = await Post.findOne({slug})
         return post;
     } catch (error) {
         console.log(error)
@@ -35,7 +35,7 @@ export const getUser = async (id) => {
     try {
         await connectToDB()
 
-        const user = await User.findOne(id)
+        const user = await User.findById(id)
         return user;
     } catch (error) {
         console.log(error)

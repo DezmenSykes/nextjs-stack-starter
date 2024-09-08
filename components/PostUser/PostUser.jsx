@@ -13,12 +13,12 @@ import styles from './post-user.module.css'
   }*/
 
 const PostUser = async ({userId}) => {
-    const user = await getUser(userId);
+    const user = await getUser (userId);
     //console.log(user);
     return (
         <div className={styles.container}>
             <span className={styles.title}>Author</span>
-            <span className={styles.username}>{user.name}</span>
+            <span className={styles.username}>{user.username}</span>
         </div>
     )
 }
