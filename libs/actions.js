@@ -1,5 +1,5 @@
 export const sayHello = async () => {
     "use server"
 
-    console.log("Hello from server");
+    console.log("Hello from server :)");
 }
