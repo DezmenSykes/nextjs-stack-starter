@@ -29,9 +29,9 @@ const SinglePostPage = async ({params}) => {
           <h1 className={styles.title}>{post.title}</h1>
           <div className={styles.details}>
               {post && (
-                <Suspense fallback={<div>Loading..</div>}>
-                  <PostUser userId={post.userId}/>
-                </Suspense>
+              <Suspense fallback={<div>Loading..</div>}>
+                <PostUser userId={post.userId}/>
+              </Suspense>
               )}
               <div className={styles.detailText}>
                 <span className={styles.detailTitle}>Published</span>

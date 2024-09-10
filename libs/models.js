@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-export const userSchema = new mongoose.Schema({
+ const userSchema = new mongoose.Schema({
     username: {
         type: String,
         required: true,
@@ -27,7 +27,7 @@ export const userSchema = new mongoose.Schema({
     }
 }, {timestamps: true})
 
-export const postSchema = new mongoose.Schema({
+ const postSchema = new mongoose.Schema({
     title: {
         type: String,
         required: true,
