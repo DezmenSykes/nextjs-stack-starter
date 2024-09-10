@@ -5,7 +5,7 @@ const ServerActionsPage = () => {
         <div>
             <form action={addPost} method="post">
                 <input type="text" name="title" placeholder="Title" />
-                <input type="text" name="description" placeholder="Description"/>
+                <input type="text" name="desc" placeholder="Description"/>
                 <input type="text" name="slug"  placeholder="Slug" />
                 <input type="text" name="userId" placeholder="User ID" />
                 <button>Create Post</button>
