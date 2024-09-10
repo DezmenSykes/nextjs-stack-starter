@@ -14,11 +14,20 @@ import { getPost } from '@/libs/data';
 //   return res.json();
 // }
 
+export const generateMetadata = async({params}) => {
+  const {slug} = params;
+  const post = await getPost(slug);
+  return {
+    title: post.title,
+    description: post.desc
+  }
+}
+
 const SinglePostPage = async ({params}) => {
 
     const {slug} = params;
     const post = await getPost(slug);
-    console.log(post)
+    //console.log(post)
 
     return (
       <div className={styles.container}>

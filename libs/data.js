@@ -2,6 +2,7 @@
 import mongoose from "mongoose";
 import { Post, Testing, User, postSchema } from "./models"
 import { connectToDB } from "./utils";
+import { unstable_noStore as noStore } from 'next/cache';
 
 // ?? - 7C8OfqD5JAupgOZm
 
@@ -32,6 +33,7 @@ export const getPost = async (slug) => {
 }
 
 export const getUser = async (id) => {
+    noStore();
     try {
         await connectToDB()
 

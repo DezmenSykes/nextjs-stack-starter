@@ -21,7 +21,7 @@ import Image  from 'next/image'
         <div className={styles.container}>
               {user.img && <Image 
                 className={styles.avatar} 
-                src={user.img}
+                src={user.img ? user.img : "/noavatar.png"}
                 alt="" width={50} height={50} />}
               <div className={styles.texts}>
                 <span className={styles.title}>Author</span>
