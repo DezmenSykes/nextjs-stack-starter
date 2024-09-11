@@ -15,7 +15,6 @@ import mongoose from "mongoose";
     },
     password: {
         type: String,
-        required:true,
         min: 6
     },
     img: {
@@ -57,6 +56,6 @@ const testingSchema = new mongoose.Schema({
     }
 })
 
-export const User = mongoose.models.user || mongoose.model("user", userSchema)
-export const Post = mongoose.models.post || mongoose.model("post", postSchema)
-export const Testing = mongoose.models.testing || mongoose.model("testing", testingSchema)
+export const User = mongoose.models?.user || mongoose.model("user", userSchema)
+export const Post = mongoose.models?.post || mongoose.model("post", postSchema)
+export const Testing = mongoose.models?.testing || mongoose.model("testing", testingSchema)
