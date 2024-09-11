@@ -1,6 +1,15 @@
 const RegisterPage = () => {
     return (
-      <h1>RegisterPage!!!</h1>
+      <div>
+        <h1>Register</h1>
+        <form action={registerWithCredentials}>
+          <input type="text" name="username" placeholder="Username" />
+          <input type="email" name="email" placeholder="Email" />
+          <input type="password" name="password" placeholder="Password" />
+          <input type="password" name="confirm_password" placeholder="Confirm Password" />
+          <button>Register</button>
+        </form>
+      </div>
     )
   }
   

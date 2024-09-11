@@ -47,3 +47,21 @@ export const logoutWithGithub = async () => {
     "use server"
     await signOut("github")
 }
+
+export const registerWithCredentials = async (formData) => {
+    "use server"
+    const { username, email, password, confirm_password } = Object.fromEntries(formData);
+    if(password !== confirm_password) {
+        return {error: "Passwords do not match"};
+    }
+    try {
+        connectToDB();
+        
+        const newUser = new User({username, email, password});
+        await newUser.save();
+        console.log("Saved to DB...");
+    } catch (error) {
+        console.log(error)
+        return {error: "Something went wrong"};
+    }
+}
