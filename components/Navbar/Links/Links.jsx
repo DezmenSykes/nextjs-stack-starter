@@ -3,6 +3,8 @@ import NavLink from '@/components/Navbar/Links/navLinks/NavLinks'
 import styles from './links.module.css'
 import { useState } from 'react';
 import Image from 'next/image';
+import { logoutWithGithub } from '@/libs/actions';
+import { auth } from '@/libs/auth';
 
 const links = [
     {
@@ -23,9 +25,9 @@ const links = [
     }
 ];
 
-const Links = () => {
+const Links = ({session}) => {
     const [open, setOpen] = useState(false);
-    const session = true;
+
     const isAdmin = true;
 
     return ( 
@@ -35,10 +37,12 @@ const Links = () => {
                     <NavLink item={link} key={link.title} />
                 )))}
                 {
-                    session ? (
+                    session?.user ? (
                         <>
-                            { isAdmin ? <NavLink item={{title: 'Admin', path: '/admin'}} key='Admin' /> : '' }    
-                            <button className={styles.logout}>Logout</button>
+                            { session.user?.isAdmin && <NavLink item={{title: 'Admin', path: '/admin'}} key='Admin' /> }    
+                            <form action={logoutWithGithub}>
+                                <button className={styles.logout}>Logout</button>
+                            </form>
                         </>
                         
                     ) : (
