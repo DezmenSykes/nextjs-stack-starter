@@ -1,14 +1,18 @@
-import { addPost } from "@/libs/actions";
+import { addPost, deletePost } from "@/libs/actions";
 
 const ServerActionsPage = () => {
     return (
         <div>
-            <form action={addPost} method="post">
+            <form action={addPost}>
                 <input type="text" name="title" placeholder="Title" />
                 <input type="text" name="desc" placeholder="Description"/>
                 <input type="text" name="slug"  placeholder="Slug" />
                 <input type="text" name="userId" placeholder="User ID" />
                 <button>Create Post</button>
+            </form>
+            <form action={deletePost}>
+                <input type="text" name="id" placeholder="Post ID" />
+                <button>Delete Post</button>
             </form>
         </div>
     )
