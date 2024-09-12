@@ -84,7 +84,7 @@ export const loginWithCredentials = async (previousState,formData) => {
         await signIn("credentials", {
             username,
             password,
-            redirect: false
+            
         }) 
     } catch (error) {
         console.log(error)
