@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;  
+}
+
+.registerForm {
+    display: flex;
+    flex-direction: column;
+    
+    gap:2rem;
+    width:100%;
+}
+
+.registerForm input {
+    padding:1.1em;
+    background:rgba(0,0,0,0.1);
+    border:none;
+    outline:none;
+    border-radius: 5px;
+    color:var(--text);
+}
+
+.registerForm button {
+    padding:0.7rem;
+    background:var(--robin-egg-blue);
+    border:none;
+    outline:none;
+    border-radius: 5px;
+    color:var(--timberwolf);
+    font-weight: bold;
+    font-size:1.2rem;
+    cursor: pointer;
+}

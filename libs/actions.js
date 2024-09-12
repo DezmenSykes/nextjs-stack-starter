@@ -49,7 +49,7 @@ export const logoutWithGithub = async () => {
     await signOut("github")
 }
 
-export const registerWithCredentials = async (formData) => {
+export const registerWithCredentials = async (previousState,  formData) => {
     "use server"
     const { username, email, password, confirm_password, img } = Object.fromEntries(formData);
     if(password !== confirm_password) {
@@ -68,13 +68,15 @@ export const registerWithCredentials = async (formData) => {
 
         const newUser = new User({username, email, password: hashedPassword, img});
         await newUser.save();
-        console.log("Saved to DB...");
+        console.log("Saved to DB..."); 
+
+        return {success: true};
     } catch (error) {
         console.log(error)
         return {error: "Something went wrong"};
     }
 }
-export const loginWithCredentials = async (formData) => {
+export const loginWithCredentials = async (previousState,formData) => {
     "use server"
     const { username, password } = Object.fromEntries(formData);
 
@@ -86,6 +88,11 @@ export const loginWithCredentials = async (formData) => {
         }) 
     } catch (error) {
         console.log(error)
+
+        if(error.message.includes("User not found")){
+            return {error: "Invalid username or password"}
+        }
+         
         return {error: "Something went wrong"};
     }
 }

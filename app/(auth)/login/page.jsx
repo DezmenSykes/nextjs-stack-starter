@@ -1,15 +1,13 @@
-import { loginWithGithub, loginWithCredentials } from "@/libs/actions"
+import { loginWithGithub  } from "@/libs/actions"
 import styles from "./login.module.css"
-const LoginPage = async () => {
+import LoginForm from "../../../components/loginForm/loginForm"
+
+const LoginPage =  () => {
   return (
       <div className={styles.container}>
         <div className={styles.wrapper}>
         <h1 className={styles.title}>Login</h1>
-        <form className={styles.loginForm} action={loginWithCredentials}>
-          <input type="text" name="username" placeholder="Username" />
-          <input type="password" name="password" placeholder="Password" />
-          <button>Login</button>
-        </form>
+        <LoginForm />
         <form className={styles.githubForm} action={loginWithGithub}>
           <button>Login With Github</button>
         </form>
